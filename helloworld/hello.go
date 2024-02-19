@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package hello
 
 /* Constants */
 const (
@@ -29,8 +27,4 @@ func Hello(name string, lang string) string {
 		name = "World"
 	}
 	return getHelloPrefix(lang) + name
-}
-
-func main() {
-	fmt.Println(Hello("World", english))
 }
