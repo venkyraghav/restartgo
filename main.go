@@ -1,5 +1,11 @@
 package main
 
+import (
+	"fmt"
+
+	hello "github.com/venkyraghav/restartgo/hello"
+)
+
 func main() {
-	// fmt.Println(Hello("World", english))
+	fmt.Println(hello.Hello("World", hello.English))
 }

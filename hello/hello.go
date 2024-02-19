@@ -2,9 +2,9 @@ package hello
 
 /* Constants */
 const (
-	spanish            = "Spanish"
-	english            = "English"
-	french             = "French"
+	Spanish            = "Spanish"
+	English            = "English"
+	French             = "French"
 	englishHelloPrefix = "Hello, "
 	spanishHelloPrefix = "Hola, "
 	frenchHelloPrefix  = "Bonjour, "
@@ -13,9 +13,9 @@ const (
 /* getHelloPrefix returns the hello prefix based on the language */
 func getHelloPrefix(lang string) string {
 	switch lang {
-	case french:
+	case French:
 		return frenchHelloPrefix
-	case spanish:
+	case Spanish:
 		return spanishHelloPrefix
 	}
 	return englishHelloPrefix
