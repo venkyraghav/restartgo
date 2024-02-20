@@ -1,11 +1,14 @@
 package main
 
 import (
-	"fmt"
+	"os"
 
-	hello "github.com/venkyraghav/restartgo/hello"
+	"github.com/venkyraghav/restartgo/mock"
 )
 
 func main() {
-	fmt.Println(hello.Hello("World", hello.English))
+	mock.Countdown(os.Stdout)
+	// fmt.Println(hello.Hello("World", hello.English))
+
+	// log.Fatal(http.ListenAndServe(":5001", http.HandlerFunc(depinj.MyGreeterHandler)))
 }
