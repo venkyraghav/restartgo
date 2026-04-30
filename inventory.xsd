@@ -4,6 +4,8 @@
     <!-- Root element -->
     <xs:element name="record">
         <xs:complexType>
+            <xs:sequence>
+
                 <!-- int field -->
                 <xs:element name="id" type="xs:int"/>
                 
@@ -22,6 +24,8 @@
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
+
+            </xs:sequence>
         </xs:complexType>
     </xs:element>
 
