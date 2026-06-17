@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://w3.org">
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            elementFormDefault="qualified">
 
-    <!-- Root Element Definition -->
-    <xs:element name="order">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="orderId" type="xs:string"/>
-                <xs:element name="customerId" type="xs:string"/>
-                <xs:element name="status" type="xs:string"/>
-                <xs:element name="currency" type="xs:string"/>
-                <xs:element name="orderTotal" type="xs:decimal"/>
-                <xs:element name="items">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="item" maxOccurs="unbounded">
-                                <xs:complexType>
-                                    <xs:sequence>
-                                        <xs:element name="sku" type="xs:string"/>
-                                        <xs:element name="quantity" type="xs:integer"/>
-                                        <xs:element name="unitPrice" type="xs:decimal"/>
-                                    </xs:sequence>
-                                </xs:complexType>
-                            </xs:element>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
+    <xsd:element name="order">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="orderId" type="xsd:string"/>
+                <xsd:element name="customerId" type="xsd:string"/>
+                <xsd:element name="status" type="xsd:string"/>
+                <xsd:element name="currency" type="xsd:string"/>
+                <xsd:element name="orderTotal" type="xsd:decimal"/>
+                <xsd:element name="items">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="item" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="sku" type="xsd:string"/>
+                                        <xsd:element name="quantity" type="xsd:integer"/>
+                                        <xsd:element name="unitPrice" type="xsd:decimal"/>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
 
-</xs:schema>
+</xsd:schema>
